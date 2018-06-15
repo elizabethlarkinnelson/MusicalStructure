@@ -4,13 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorBackground"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
     <TextView
+        style="@style/MainPageText"
+        android:textColor="@color/colorText"
+        android:text="@string/play_it"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        style="@style/MainPageText"
+        android:src="@drawable/music_note"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        style="@style/MainPageText"
         android:id="@+id/show_songs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All Songs"
+        android:text="@string/your_library"
+        android:textSize="20sp"
       />
 
 </LinearLayout>
