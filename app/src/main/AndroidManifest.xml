@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AllSongs"></activity>
+        <activity android:name=".AllSongsActivity"></activity>
     </application>
 
 </manifest>

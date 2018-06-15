@@ -3,28 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBackground"
+    android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
     <TextView
         style="@style/MainPageText"
-        android:textColor="@color/colorText"
+        android:layout_marginTop="40dp"
         android:text="@string/play_it"
-        android:textSize="50sp"
-        android:layout_marginTop="40dp"/>
+        android:textColor="@color/colorText"
+        android:textSize="50sp" />
 
     <ImageView
         style="@style/MainPageText"
-        android:src="@drawable/music_note"
+        android:layout_marginBottom="40dp"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="40dp"/>
+        android:src="@drawable/music_note" />
 
     <TextView
-        style="@style/MainPageText"
         android:id="@+id/show_songs"
+        style="@style/MainPageText"
         android:text="@string/your_library"
-        android:textSize="20sp"
-      />
+        android:textSize="20sp" />
 
 </LinearLayout>

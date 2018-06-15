@@ -13,12 +13,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+         * Sets an onClick listener sending an intent to AllSongsActivity
+         */
         TextView allSongs = (TextView) findViewById(R.id.show_songs);
         allSongs.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), AllSongs.class);
+                Intent i = new Intent(v.getContext(), AllSongsActivity.class);
                 startActivity(i);
-            }
+                }
         });
     }
 }

@@ -1,4 +1,5 @@
 <resources>
+    <!-- Base application strings -->
     <string name="app_name">MusicalStructure</string>
     <string name="play_it">Play It!</string>
     <string name="your_library">Your Library</string>

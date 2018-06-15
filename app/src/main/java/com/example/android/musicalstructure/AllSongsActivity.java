@@ -6,17 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AllSongs extends AppCompatActivity {
+public class AllSongsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_songs);
 
+        /**
+         * Sets an onClick listener sending an intent to MainActivity
+         */
         ImageView homePage = (ImageView) findViewById(R.id.home_button);
         homePage.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -25,10 +27,14 @@ public class AllSongs extends AppCompatActivity {
             }
         });
 
-        //Declare an ArrayList of allSongs
+        /**
+         * Instantiates new ArrayList of custom type SongInfo
+         */
         ArrayList<SongInfo> allSongs = new ArrayList<SongInfo>();
 
-        //Add song names to the ArrayList allSongs
+        /**
+         * allSongs ArrayList has objects of type SongInfo instantiated and added to list
+         */
         allSongs.add(new SongInfo("Bye, Bye, Bye", "NSYNC", "NSYNC"));
         allSongs.add(new SongInfo("It's Gonna Be Me", "NSYNC", "NSYNC"));
         allSongs.add(new SongInfo("This I Promise You", "NSYNC", "No Strings Attached"));
@@ -39,14 +45,17 @@ public class AllSongs extends AppCompatActivity {
         allSongs.add(new SongInfo("Genie In A Bottle", "Christina Aguilera", "Greatest Hits, Christina"));
         allSongs.add(new SongInfo("Beautiful", "Christina Aguilera", "Greatest Hits, Christina"));
 
-        //Create an ArrayAdapter
+
+        /**
+         * Utilizing custom class SongAdapter, which builds out on ArrayAdapter
+         */
         SongAdapter adapter =
                 new SongAdapter(this, allSongs);
 
-        //Fine the listView in XML activity
+        /**
+         * listview XML has setAdapter method called with adapter as arg
+         */
         ListView listView = (ListView) findViewById(R.id.listview_songs);
-
-        //On the above list view, call the setadapter method and use itemsAdapter as arg
         listView.setAdapter(adapter);
 
     }

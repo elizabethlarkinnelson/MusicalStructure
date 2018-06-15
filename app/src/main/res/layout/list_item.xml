@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/colorBackground">
+    android:padding="16dp">
 
     <TextView
-        style="@style/MainPageText"
         android:id="@+id/song_item_song_name"
+        style="@style/MainPageText"
         android:textStyle="bold"
-        tools:text="Rocky Raccon"
-         />
+        tools:text="Rocky Raccon" />
 
     <TextView
-        style="@style/MainPageText"
         android:id="@+id/song_item_artist"
-        tools:text="The Beatles"
-        />
+        style="@style/MainPageText"
+        tools:text="The Beatles" />
 
     <TextView
-        style="@style/MainPageText"
         android:id="@+id/song_item_album"
+        style="@style/MainPageText"
         android:textStyle="italic"
-        tools:text="Greatest Hits: The Beatles"
-        />
+        tools:text="Greatest Hits: The Beatles" />
 
 </LinearLayout>
