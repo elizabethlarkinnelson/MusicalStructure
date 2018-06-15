@@ -20,11 +20,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
     }
-
-//    public void OpenAllSongs(View view){
-//        Intent i = new Intent(this, AllSongs.class);
-//        startActivity(i);
-//    }
 }
