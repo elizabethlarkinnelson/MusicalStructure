@@ -1,5 +1,6 @@
 package com.example.android.musicalstructure;
 
+import android.content.Context;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 public class SongAdapter extends ArrayAdapter<SongInfo> {
 
 
-    public SongAdapter(Activity context, ArrayList<SongInfo> songs){
+    public SongAdapter(Context context, ArrayList<SongInfo> songs){
 
         super(context, 0, songs);
 
@@ -26,8 +27,7 @@ public class SongAdapter extends ArrayAdapter<SongInfo> {
 
         View listItemView = convertView;
         if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.all_songs, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
         SongInfo currentSong = getItem(position);
