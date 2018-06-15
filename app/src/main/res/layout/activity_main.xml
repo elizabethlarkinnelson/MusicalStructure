@@ -12,7 +12,7 @@
         android:textColor="@color/colorText"
         android:text="@string/play_it"
         android:textSize="50sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="40dp"/>
 
     <ImageView
         style="@style/MainPageText"

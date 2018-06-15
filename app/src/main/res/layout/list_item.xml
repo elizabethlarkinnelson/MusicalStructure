@@ -5,24 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorBackground">
 
     <TextView
+        style="@style/MainPageText"
         android:id="@+id/song_item_song_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="lutti" />
+        android:textStyle="bold"
+        tools:text="Rocky Raccon"
+         />
 
     <TextView
+        style="@style/MainPageText"
         android:id="@+id/song_item_artist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="one" />
+        tools:text="The Beatles"
+        />
 
     <TextView
+        style="@style/MainPageText"
         android:id="@+id/song_item_album"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="one" />
+        android:textStyle="italic"
+        tools:text="Greatest Hits: The Beatles"
+        />
 
 </LinearLayout>
